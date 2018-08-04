@@ -1,0 +1,42 @@
+CREATE TABLE [stg].[Venutize_Products]
+(
+[ETL_ID] [int] NOT NULL IDENTITY(1, 1),
+[ETL_CreatedDate] [datetime] NOT NULL CONSTRAINT [DF__Venutize___ETL_C__78159CA3] DEFAULT (getdate()),
+[ETL_SourceFileName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProductID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Product] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Description] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProductCategoryTitle] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PerUserCap] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsFeatured] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsShowcased] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AvailableStartDate] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AvailableEndDate] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsActive] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Attributes] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Definitions] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RewardID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Title] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CostInPoints] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NotForSale] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RequiredRoleID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RewardAvailableStartDate] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RewardAvailableEndDate] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[QuantityAvailable] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[QuantityRemaining] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsAuction] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuctionID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RewardIsFeatured] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Active] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateUpdated] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RewardIsShowcased] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RewardCategoryID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CategoryTitle] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BuyNowCost] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsVoucher] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RedemptionCode] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
+ALTER TABLE [stg].[Venutize_Products] ADD CONSTRAINT [PK__Venutize__7EF6BFCD366FF0B7] PRIMARY KEY CLUSTERED  ([ETL_ID])
+GO

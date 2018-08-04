@@ -1,0 +1,27 @@
+CREATE SCHEMA [working]
+AUTHORIZATION [dbo]
+GO
+GRANT ALTER ON SCHEMA:: [working] TO [db_apiETL]
+GO
+GRANT DELETE ON SCHEMA:: [working] TO [db_apiETL]
+GO
+GRANT EXECUTE ON SCHEMA:: [working] TO [db_apiETL]
+GO
+GRANT INSERT ON SCHEMA:: [working] TO [db_apiETL]
+GO
+GRANT SELECT ON SCHEMA:: [working] TO [db_apiETL]
+GO
+GRANT UPDATE ON SCHEMA:: [working] TO [db_apiETL]
+GO
+GRANT ALTER ON SCHEMA:: [working] TO [SSBCLOUD\BI Developers]
+GO
+GRANT DELETE ON SCHEMA:: [working] TO [SSBCLOUD\BI Developers]
+GO
+GRANT EXECUTE ON SCHEMA:: [working] TO [SSBCLOUD\BI Developers]
+GO
+GRANT INSERT ON SCHEMA:: [working] TO [SSBCLOUD\BI Developers]
+GO
+GRANT SELECT ON SCHEMA:: [working] TO [SSBCLOUD\BI Developers]
+GO
+GRANT UPDATE ON SCHEMA:: [working] TO [SSBCLOUD\BI Developers]
+GO
